@@ -29,9 +29,11 @@ Faces can be upscaled as well, with either low denoise strength (for fewer chang
 
 
 To completely realize this project, all textures need to be sorted by at least material for batch upscaling, as each texture from 256x256 to 4096x4096 takes at least 8 Minutes and as such needs to run in the background/overnight.
+
 -----> adjusting settings might bring down time per texture down to 3 min.
 
 The file sizes might also be problematic, as converted to .dds(DXT1) they are at least 10x compared to the MET 2k textures. Im not (well(at all)) versed in the .dds file type and as such cant say anything about the different compression types and which are supported by OpenMW. So loading times might/will increase visibly, possibly? Also might need more vram, also question if the heavily compressed textures can be handled by the single engine cpu thread?
+
 -----> either uncompressed or DXT1, BC7 doesnt work with OpenMW and it can supposedly handle 4k
 
 Further research/testing required.
